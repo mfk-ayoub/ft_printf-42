@@ -4,7 +4,7 @@
 This is the second project of the **`42Cursus`**. <br />
 The goal of this project is pretty straightforward. recoding `printf()` (not the whole function).
 
-
+<table>
  <tbody>
   <tr>
             <th>Format Specifier</th>
@@ -42,6 +42,7 @@ The goal of this project is pretty straightforward. recoding `printf()` (not the
             <td>writes an unsigned integer to hexadecimal representation.</td>
         </tr>
     </tbody>
+</table>
 
 # What are variadic functions
 
