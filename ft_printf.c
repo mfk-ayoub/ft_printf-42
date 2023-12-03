@@ -6,12 +6,11 @@
 /*   By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 10:37:12 by ayel-mou          #+#    #+#             */
-/*   Updated: 2023/11/29 23:54:05 by ayel-mou         ###   ########.fr       */
+/*   Updated: 2023/12/02 10:46:25 by ayel-mou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
 
 static int	ft_formate(const char *s, va_list args)
 {
@@ -25,15 +24,15 @@ static int	ft_formate(const char *s, va_list args)
 	else if (*s == '%')
 		i = ft_putchr('%');
 	else if (*s == 'x')
-	 	i = ft_printhex(va_arg(args, unsigned int));
+		i = ft_printhex(va_arg(args, unsigned int));
 	else if (*s == 'X')
-	 	i = ft_printHEX(va_arg(args, unsigned int));
+		i = ft_print_hex_upper(va_arg(args, unsigned int));
 	else if (*s == 'd' || *s == 'i')
 		i = ft_putnbr(va_arg(args, int));
 	else if (*s == 'p')
-		i = ft_printpoint(va_arg(args,unsigned long));
+		i = ft_printpoint(va_arg(args, unsigned long));
 	else if (*s == 'u')
-		i = ft_putundec(va_arg(args,unsigned int));
+		i = ft_putundec(va_arg(args, unsigned int));
 	return (i);
 }
 

@@ -6,7 +6,7 @@
 #    By: ayel-mou <ayel-mou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/24 11:14:09 by ayel-mou          #+#    #+#              #
-#    Updated: 2023/11/28 06:06:33 by ayel-mou         ###   ########.fr        #
+#    Updated: 2023/11/30 08:21:30 by ayel-mou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC = ft_printf.c ft_putchr.c ft_putnbr.c ft_putstr.c ft_printhex.c ft_printHEX.
 
 FLAGES = -Wall -Wextra -Werror
 
-CC = cc 
+CC = cc
 
 OBJ = $(SRC:.c=.o)
 
