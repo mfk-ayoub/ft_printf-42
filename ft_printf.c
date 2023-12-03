@@ -50,6 +50,8 @@ int	ft_printf(const char *s, ...)
 		if (*s == '%')
 		{
 			++s;
+			if (*s == NULL)
+				return (-1);
 			lenght += ft_formate(s, ptr);
 			++s;
 		}
